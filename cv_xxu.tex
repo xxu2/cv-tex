@@ -11,7 +11,9 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{url}
-\pagestyle{empty} % Suppress page numbers
+\pagestyle{plain}
+\pagenumbering{roman}
+%\pagestyle{empty} % Suppress page numbers
 
 %this is needed to get the block text justified
 \usepackage{ragged2e}
@@ -65,11 +67,15 @@ Lincoln, NE 68588-0340 \hfill xxu@huskers.unl.edu\\
 {\bf\large Education}
 \sectionlineskip
 \hrule
-\begin{tabular}{ll}
-Lanzhou University (China), Atmospheric Sciences & B.S. (2005) \\
-Lanzhou University (China), Meteorology & M.S. (2008) \\
-University of Nebraska-Lincoln, Earth and Atmospheric Sciences & Ph.D.
-(2015) 
+\begin{tabular}{p{0.9in} p{5.3in}}
+B.S. (2005) & Lanzhou University (China), Atmospheric Sciences\\
+M.S. (2008) & Lanzhou University (China), Meteorology \\
+            & {\small \textit{Thesis: Study of Predictability and
+Predictive Capacity of T63L16 Climate Model}}  \\
+Ph.D. (2015) & University of Nebraska-Lincoln, Earth and Atmospheric
+Sciences \\
+            & {\small \textit{Thesis: Retrieval of Aerosol Microphysical 
+Properties from AERONET Photo-Polarimetric Measurements }}\\
 \end{tabular}
 
 %% Research Experiences
