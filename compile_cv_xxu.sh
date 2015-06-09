@@ -4,11 +4,11 @@
 
 echo "Type the version of current CV followed by [ENTER]:"
 read version
-echo $version
+echo "Generate version:" $version
 
 # Compile the tex file
 pdflatex cv_xxu
 pdflatex cv_xxu
 
 # Rename the file
-mv cv_xxu.pdf cv_xxu_v$version.pdf
+mv cv_xxu.pdf ./pdfs/cv_xxu_v$version.pdf
