@@ -125,5 +125,6 @@ sympy-plots-for-*.tex/
 *.bak
 *.sav
 
-# folder
+# local folder/files
 pdfs/
+.DS_Store
