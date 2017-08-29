@@ -6,6 +6,13 @@
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = ProcessBlue,
+            urlcolor  = ProcessBlue,
+            citecolor = ProcessBlue,
+            anchorcolor = ProcessBlue]{hyperref}
+
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
@@ -55,10 +62,12 @@
 \hfil{\bf{\Large{Xiaoguang (Richard) Xu}}}\hfil
 
 \nameskip
-The University of Iowa \hfill  \url{http://xxu.unl-vrtm.com}\\
-Chem \& Biochem Engineering \hfill   Cell: (402	805 $\cdot$ 7712\\
-Center for Global \& Regional Environmental Research  \hfill Phone: (319) 335 $\cdot$ 1400\\
-IATL 401 \hfill xiaoguang-xu@uiowa.edu\\
+The University of Iowa \hfill  \hfill Phone: (319) 335 $\cdot$ 1400\\
+Dept. of Chem \& Biochem Engineering \hfill   Cell: (402) 805 $\cdot$ 7712\\
+Center for Global \& Regional Environmental Research  \hfill
+\href{xiaoguang-xu@uiowa.edu}{xiaoguang-xu@uiowa.edu}\\
+IATL 401 \hfill Founder,
+\href{http://www.unl-vrtm.com}{http://www.unl-vrtm.com} \\
 Iowa City, IA 52242
 
 %\vskip-1em
@@ -93,7 +102,8 @@ in 2012.
 Ph.D. & Earth and Atmospheric Sciences, University of Nebraska-Lincoln, 2015\\
       & {\small Dissertation: \textit{Retrieval of the Aerosol
                 Microphysical Properties from AERONET Photopolarimetric 
-                Measurements}}\\
+                Measurements}
+(\href{http://digitalcommons.unl.edu/geoscidiss/66/}{url})}\\
 M.S. & Meteorology, Lanzhou University, Lanzhou, China, 2008 \\
      & {\small Thesis: \textit{Study of Predictability of the 
                T63L16 Climate Model}}  \\
@@ -107,17 +117,16 @@ B.S. &  Atmospheric Sciences, Lanzhou University, Lanzhou, China, 2005\\
 \hrule
 \begin{tabular}{p{1.1in} p{5.3in}}
  \justifying
-09/2016--present & Assistant Research Scientist, The University of Iowa
+09/2016--Present & Assistant Research Scientist, The University of Iowa
 \\
 01/2016--08/2016 & Research Assistant Professor, University of
 Nebraska-Lincoln \\
 09/2015--12/2015 & Postdoctoral Scholar, University of Nebraska-Lincoln \\
-09/2012--08/2015 & Graduate Student Fellow, University of Nebraska-Lincoln\\
-08/2008--08/2012 & Graduate Research Assistant, University of Nebraska-Lincoln
-\\
 2010 Summer & Visiting Scholar, University of Colorado, Boulder \\ 
 2009 Summer & Visiting Researcher, National Center for Atmospheric
 Research (NCAR) \\
+08/2008--08/2015 & Graduate Research Assistant, University of
+Nebraska-Lincoln\\
 07/2006--07/2008  & Graduate Researcher, National Climate Center, China
 Meteorological Administration \\
 \end{tabular}
@@ -129,11 +138,13 @@ Meteorological Administration \\
 \hrule
 \begin{tabular}{p{0.9in} p{5.3in}}
  \justifying
-2017 Spring & Co-Lecturer, \textit{Sat Image Proc \& Remote Sens
-Atmosphere}, U. Iowa\\
+2017 Spring & Co-Lecturer, \textit{Satellite Image Processing \& Remote
+Sensing of Atmosphere}, U. Iowa\\
 2015 Fall   & Guest Lecturer, \textit{Advanced Satellite Remote
 Sensing}, U. Nebraska \\
-2015 Fall   & Guest Lecturer, \textit{Physical Meteorology} \\
+2015 Fall   & Guest Lecturer, \textit{Physical Meteorology}, U. Nebraska \\
+2014 Spring & Lead, \textit{Inverse Modeling \& Optimization Discussion
+Series}, U. Nebraska \\
 2013 Fall   & Teaching Assistant, \textit{Environment, Energy, and
 Climate}, U. Nebraska \\
 2012 Fall   & Guest Lecturer, \textit{Advanced Satellite Remote
@@ -161,11 +172,17 @@ Society 2007 Annual Meeting \\
 \sectionlineskip
 \hrule
 
-\textbf{Joint Retrieval of Aerosol Properties and Surface Reflectance
-Spectra from AVIRIS-NG Spectroscopic Measurements} \quad (pending,
-\$124,139, Xu is the PI). \\
-\hspace{.5cm} -- NNH16ZDA001N-AVRSNG \\
-\hspace{.5cm} -- 07/18/2017 -- 01/17/2019
+\textbf{Characterization of Global Aerosol Height Using Satellite
+Observations in Oxygen A and B bands} \quad (Pending,
+\$260,379, Xu is the PI). \\
+\hspace{.5cm} -- NNH17ZDA001N-NIP \\
+\hspace{.5cm} -- 03/15/2018 -- 03/14/2021
+
+\textbf{Constraining Dust Refractive Index and Direct Radiative Forcing
+Using Paired Sounder/Imager Sensors on Aqua and SNPP} \quad (Pending,
+\$554,836, Xu is the PI). \\
+\hspace{.5cm} -- NNH17ZDA001N-TASNPP \\
+\hspace{.5cm} -- 12/01/2017 -- 11/30/2020
 
 \textbf{Multi-phase inversion of aerosol sources using MODIS, MISR, OMI,
 and AERONET data and the GEOS-Chem adjoint} \quad (\$809,486, Xu is
@@ -210,106 +227,155 @@ MA, 7--10 April 2009. \\
 
 
 \sectionskip
-{\bf\large Journal Publications}
+{\bf\large Journal Publications (Total: 24)}
 \sectionlineskip
 \hrule
 \begin{longtable}{p{0.4in} p{5.8in}}
  \justifying 
- 2017 & Wang Y., J. Wang, R. Levy, \textbf{X. Xu}, and J. Reid, 
-MODIS Retrieval of Aerosol Optical Depth over Turbid Coastal Water, 
-Remote Sensing, Submitted. \\
+ 2017 & Tao M., L. Chen, Z. Wang, J. Wang, H. Che, W. Wang, J. Tao,
+\underline{X. Xu}, H. Zhu, and C. Hou, \textbf{Evaluation of MODIS Deep Blue aerosol 
+algorithm in desert region of East Asia: ground validation and
+inter-comparison}, \textit{J. Geophys. Res. Atmos.}, Submitted. \\
+ 2017 & \underline{Xu X.}, J. Wang, Y. Wang, J. Zeng, O. Torres, Y. Yang, A.
+Marshak, J. Reid, and S. Miller, \textbf{Passive remote sensing of
+altitude and optical depth of dust plumes using the oxygen A and B
+bands: First results from EPIC/DSCOVR at Lagrange-1 point}, \textit{Geophys. 
+Res. Lett.}, 44, 7544-7554, doi:\href{http://dx.doi.org/10.1002/2017GL073939}
+{10.1002/2017GL073939}.\\
+ 2017 & \underline{Xu X.}, J. Wang, Y. Wang, D. K. Henze, L. Zhang, G. A. Grell, S.
+McKeen. and B. Wielicki, \textbf{Sense size-dependent dust loading and emission
+from space using reflected solar and infrared spectral measurements: An
+observation system simulation experiment}, \textit{J. Geophys. Res.
+Atmos.}, 122, doi:\href{http://dx.doi.org/10.1002/2017JD026677}
+{10.1002/2017JD026677}.\\
+ 2017 & Tao, M., Z. Wang, J. Tao, L. Chen, J. Wang, C. Hou, L. Wang,
+\underline{X. Xu}, and H. Zhu, \textbf{How Do Aerosol Properties Affect 
+the Temporal Variation of MODIS AOD Bias in Eastern China?},
+\textit{Remote Sensing}, 9(8), 800,
+doi:\href{http://dx.doi.org/10.3390/rs9080800} {10.3390/rs9080800}.\\
+ 2017 & Wang Y., J. Wang, R. Levy, \underline{X. Xu}, and J. Reid, 
+\textbf{MODIS Retrieval of Aerosol Optical Depth over Turbid Coastal
+Water}, \textit{Remote Sensing}, 9(6), 595,
+doi:\href{http://dx.doi.org/10.3390/rs9060595}{10.3390/rs9060595}. \\
  2017 & Zhu J., X. Xia, J. Wang, H. Che, H. Chen, 
-J.  Zhang, \textbf{X. Xu}, R. Levy, M. Oo, R. Holz,
+J.  Zhang, \underline{X. Xu}, R. Levy, M. Oo, R. Holz,
 M. Ayoub, \textbf{Evaluation of aerosol optical depth and aerosol models
 from VIIRS retrieval algorithms over North China Plain}, \textit{Remote
-Sensing}, Submitted. \\
- 2017 & \textbf{Xu X.}, J. Wang, Y. Wang, and A. Kokhanovsky,
-\textbf{Passive remote sensing of aerosol layer height}, in
-\textit{Remote Sensing of Aerosols, Clouds, and Precipitation}, edited
-by T. Islam, Y. Hu, A. Kokhanovsky, and J. Wang, Elsevier. Accepted.\\
- 2017 & Qu Z., D. K. Henze, S. L. Capps, Y. Wang, \textbf{X. Xu}, J.
+Sensing}, 9(5), 432, doi:\href{http://dx.doi.org/10.3390/rs9050432}
+{10.3390/rs9050432}. \\
+ 2017 & Qu Z., D. K. Henze, S. L. Capps, Y. Wang, \underline{X. Xu}, J.
 Wang, and M. Keller, \textbf{Monthly top-down NOx emissions for China
 (2005--2012): a hybrid inversion method and trend analysis}, 
-\textit{J. Geophys. Res. Atmos.}, 122, doi:10.1002/2016JD025852. \\
- 2017 & Hou W., J. Wang, \textbf{X. Xu}, and J. Reid, \textbf{An
+\textit{J. Geophys. Res. Atmos.}, 122, 4600-4625,
+doi:\href{http://dx.doi.org/10.1002/2016JD025852}{10.1002/2016JD025852}. \\
+ 2017 & Hou W., J. Wang, \underline{X. Xu}, and J. Reid, \textbf{An
 algorithm for hyperspectral remote sensing of aerosols: 2. Information
 content analysis for aerosol parameters and principal components of
 surface spectra}, \textit{Journal of Quantitative
-Spectroscopy and Radiative Transfer}, 192, 14--29. \\
- 2016 & \textbf{Xu X.}, J. Wang, Y. Wang, D. K. Henze, L. Zhang, G. A. Grell, 
- and B. Wielicki, \textbf{Information content of UV-Vis-NIR-IR spectral
-measurements for size-dependent dust emissions: CLARREO observation
-system simulation experiments}, \textit{J. Geophys. Res.
-Atmos.}, Submitted. \\ 
- 2016 & Chen X., J. Wang, Y. Liu, \textbf{X. Xu}, Z. Cai, D. Yang,
+Spectroscopy and Radiative Transfer}, 192, 14--29,
+doi:\href{http://dx.doi.org/10.1016/j.jqsrt.2017.01.041}
+{http://dx.doi.org/10.1016/j.jqsrt.2017.01.041}. \\
+ 2017 & Chen X., J. Wang, Y. Liu, \underline{X. Xu}, Z. Cai, D. Yang,
 and C. Yan, \textbf{Angular dependence of aerosol information content in
 CAPI/TanSat observation over land: effect of polarization and synergy
-with A-train satellites}, \textit{Remote Sensing of Environment},
-submitted. \\
- 2016 & Wang Y., J. Wang, \textbf{X. Xu}, D. K. Henze, Y. Wang, and Z. 
+with A-train satellites}, \textit{Remote Sensing of
+Environment}, 196, 163-177, 
+doi:\href{https://doi.org/10.1016/j.rse.2017.05.007}
+{https://doi.org/10.1016/j.rse.2017.05.007}. \\
+ 2016 & Wang Y., J. Wang, \underline{X. Xu}, D. K. Henze, Y. Wang, and Z. 
 Qu, \textbf{A new approach for monthly updates of anthropogenic sulfur dioxide
 emissions from space: implications for air quality forecasts}, 
-\textit{Geophys. Res. Lett.}, 2016, 9931--9938. \\
- 2016 & Wang J., C. Aegerter, \textbf{X. Xu}, and J. Szykman, \textbf{Potential
+\textit{Geophys. Res. Lett.}, 2016, 9931--9938,
+doi:\href{http://dx.doi.org/10.1002/2016GL070204}
+{10.1002/2016GL070204}. \\
+ 2016 & Wang J., C. Aegerter, \underline{X. Xu}, and J. Szykman, \textbf{Potential
 application of VIIRS Day/Night Band for monitoring nighttime surface
 PM2.5 air quality from space}, \textit{Atmospheric Environment}, 2016,
-124, 55--63.\\
- 2016 & Hou W., J. Wang, \textbf{X. Xu}, and J. Reid, \textbf{An algorithm 
+124, 55--63, doi:\href{https://doi.org/10.1016/j.atmosenv.2015.11.013}
+{https://doi.org/10.1016/j.atmosenv.2015.11.013}.\\
+ 2016 & Hou W., J. Wang, \underline{X. Xu}, and J. Reid, \textbf{An algorithm 
 for hyperspectral remote sensing of aerosols: 1. Development of 
 theoretical framework}, \textit{Journal of Quantitative
-Spectroscopy and Radiative Transfer}, 2016, 178, 400--415. \\
- 2016 & Ding S., J. Wang, and \textbf{X. Xu}, \textbf{Polarimetric remote
+Spectroscopy and Radiative Transfer}, 2016, 178, 400--415, 
+doi:\href{https://doi.org/10.1016/j.jqsrt.2016.01.019}
+{https://doi.org/10.1016/j.jqsrt.2016.01.019}. \\
+ 2016 & Ding S., J. Wang, and \underline{X. Xu}, \textbf{Polarimetric remote
 sensing in O2 A and B bands: Sensitivity study and information content
-analysis for vertical profile of aerosols}, \textit{Atmos. Meas. Tech.}, 2016, 9, 2077--2092. \\
- 2015 & \textbf{Xu X.} and and J. Wang, \textbf{Retrieval of aerosol
+analysis for vertical profile of aerosols}, \textit{Atmos. Meas. Tech.}, 
+2016, 9, 2077--2092, doi:\href{https://doi.org/10.5194/amt-9-2077-2016}
+{10.5194/amt-9-2077-2016}. \\
+ 2015 & \underline{Xu X.} and and J. Wang, \textbf{Retrieval of aerosol
 microphysical properties from AERONET photopolarimetric measurements:
 1. Information content analysis}, \textit{J. Geophys. Res. Atmos.}, 2015,
-120, 7059--7078. \\
- 2015 & \textbf{Xu X.},  J. Wang, J. Zeng, R. Spurr, X. Liu, O. Dubovik,
+120, 7059--7078, doi:\href{http://dx.doi.org/10.1002/2015JD023108}
+{10.1002/2015JD023108} \\
+ 2015 & \underline{Xu X.},  J. Wang, J. Zeng, R. Spurr, X. Liu, O. Dubovik,
 L. Li, Z. Li, M. I. Mishchenko, A. Siniuk, and B. N. Holben, \textbf{
 Retrieval of aerosol microphysical properties from AERONET photopolarimetric
 measurements: 2. A new research algorithm and case demonstration},
-\textit{J. Geophys. Res. Atmos.}, 2015, 120, 7079--7098.\\ 
-2014 & Wang J., \textbf{X. Xu}, S. Ding, J. Zeng, R. Spurr, X. Liu, K. Chance,
+\textit{J. Geophys. Res. Atmos.}, 2015, 120, 7079--7098,
+doi:\href{http://dx.doi.org/10.1002/2015JD023113} {10.1002/2015JD023113}.\\ 
+2014 & Wang J., \underline{X. Xu}, S. Ding, J. Zeng, R. Spurr, X. Liu, K. Chance,
 and M. Mishchenko, \textbf{A numerical testbed for remote sensing of aerosols,
 and its demonstration for evaluating retrieval synergy from a geostationary 
 satellite constellation of GEO-CAPE and GOES-R}, \textit{Journal of 
-Quantitative Spectroscopy and Radiative Transfer}, 2014, 146(0), 510--528. \\
-2013 & Meland B. S., \textbf{X. Xu}, D. Henze, and J. Wang, \textbf{Assessing
+Quantitative Spectroscopy and Radiative Transfer}, 2014, 146(0),
+510--528, doi:\href{https://doi.org/10.1016/j.jqsrt.2014.03.020}
+{https://doi.org/10.1016/j.jqsrt.2014.03.020}. \\
+2013 & Meland B. S., \underline{X. Xu}, D. Henze, and J. Wang, \textbf{Assessing
 remote polarimetric measurement sensitivities to aerosol emissions using
 the GEOS-Chem adjoint model}, \textit{Atmos. Meas. Tech.}, 2013, 6,
-3441--3457.
-\\ 
-2013 & \textbf{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
+3441--3457, doi:\href{https://doi.org/10.5194/amt-6-3441-2013}
+{10.5194/amt-6-3441-2013}. \\ 
+2013 & \underline{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
 \textbf{Constraints on aerosol sources using GEOS-Chem adjoint and MODIS
 radiances, and evaluation with multisensor (OMI, MISR) data}, \textit{J.
-Geophys. Res. Atmos.}, 2013, 118(12), 6396--6413. \\
-2013 & Wang C., J. Li, and \textbf{X. Xu}, \textbf{Wavelet analysis of
+Geophys. Res. Atmos.}, 2013, 118(12), 6396--6413,
+doi:\href{http://dx.doi.org/10.1002/jgrd.50515}
+{10.1002/jgrd.50515}. \\
+2013 & Wang C., J. Li, and \underline{X. Xu}, \textbf{Wavelet analysis of
 quasi-3-year temperature oscillations in China in last 50 years, and
 predicted changes in the next 20 years}, \textit{Sciences in Cold and
 Arid Regions}, 2013, 5(6), 0755--0766. \\ 
-2012 & Wang J., \textbf{X. Xu}, D. K. Henze, J. Zeng, Q. Ji, S.-C.
+2012 & Wang J., \underline{X. Xu}, D. K. Henze, J. Zeng, Q. Ji, S.-C.
 Tsay, and J. Huang, \textbf{Top-down estimate of dust emissions through
 integration of MODIS and MISR aerosol retrievals with the GEOS-Chem
-adjoint model}, \textit{Geophys. Res. Lett.}, 2012, 39(8), L08802. \\
-2012 & Wang C., J. Li, X. Li, and \textbf{X. Xu}, Analysis on
+adjoint model}, \textit{Geophys. Res. Lett.}, 2012, 39(8), L08802,
+doi:\href{http://dx.doi.org/10.1029/2012GL051136} {10.1029/2012GL051136}. \\
+2012 & Wang C., J. Li, X. Li, and \underline{X. Xu}, Analysis on
 Quasi-periodic Characteristics of Precipitation in Recent 50 Years and
 Trend in Next 20 Years in China. \textit{Arid Zone Research}, 2012, 1, 002. \\
-2012 & Wang C., J. Li, and \textbf{X. Xu}, Universality of Quasi-3-year
+2012 & Wang C., J. Li, and \underline{X. Xu}, Universality of Quasi-3-year
 Period of Temperature in Last 50 Years and Change in Next 20 Years in
 China, \textit{Plateau Meteorology}, 2012, 31(1), 126--136. \\
-2010 & Wang J., \textbf{X. Xu}, R. Spurr, Y. Wang, and E. Drury,
+2010 & Wang J., \underline{X. Xu}, R. Spurr, Y. Wang, and E. Drury,
 \textbf{Improved algorithm for MODIS satellite retrievals of aerosol optical
 thickness over land in dusty atmosphere: Implications for air quality
 monitoring in China}, \textit{Remote Sensing of Environment}, 2010, 114(11),
-2575--2583. \\
-2009 & \textbf{Xu X.}, W. Li, H. Ren, and P. Zhang, Distribution of
+2575--2583, doi:\href{https://doi.org/10.1016/j.rse.2010.05.034}
+{https://doi.org/10.1016/j.rse.2010.05.034}. \\
+2009 & \underline{Xu X.}, W. Li, H. Ren, and P. Zhang, Distribution of
 prediction capacity of T63L16 model for medium-range forecast at
 different spatial scales, \textit{Acta Meteorologica Sinica}, 2009, 67(6),
 992--1001.\\
 \end{longtable} 
 \vskip-1em
 %\quad Total citation: \textbf{182} (Google Scholar Citations as of June 2016) 
+
+\sectionskip
+{\bf\large Book Chapters}
+\sectionlineskip
+\hrule
+\begin{longtable}{p{0.4in} p{5.8in}}
+ \justifying
+2017 & \underline{Xu X.}, J. Wang, Y. Wang, and A. Kokhanovsky,
+\textbf{Passive remote sensing of aerosol height}, in
+\textit{Remote Sensing of Aerosols, Clouds, and Precipitation}, edited
+by T. Islam, Y. Hu, A. Kokhanovsky, and J. Wang, pp. 1-22, Elsevier,
+Cambridge, MA. In press. \\
+
+\end{longtable}
+\vskip-1em
 
 
 %%% Recent Conference Presentations (Oral) 
@@ -319,109 +385,115 @@ different spatial scales, \textit{Acta Meteorologica Sinica}, 2009, 67(6),
 \hrule
 \begin{longtable}{p{0.4in} p{5.8in}}
  \justifying
- 2017 & Wang J., S. Ding, and \textbf{X. Xu}, Polarimetric remote sensing in
+ 2017 & \underline{Xu X.} and J. Wang, Multi-sensor aerosol retrievals,
+\textit{MURI Annual Meeting}, Fort Collins, CO, 8-9 August 2017. \\
+ 2017 & \underline{Xu X.} and J. Wang, A pilot study of spectral
+fingerprints of absorbing aerosols above boundary layer clouds,
+\textit{CLARREO Science Definition Team Meeting}, Boulder, CO, May
+17-19th, 2017. \\
+ 2017 & Wang J., S. Ding, and \underline{X. Xu}, Polarimetric remote sensing in
 oxygen A and B bands: sensitivity study and information content analysis
 for vertical profile of aerosols,  \textit{The 16th Electromagnetic and
 Light Scattering Conference}, College Park, MD, 19-25 March 2017. \\
- 2017 & Hou W, J. Wang, and \textbf{X. Xu}, Feasibility analysis of hyperspectral
+ 2017 & Hou W, J. Wang, and \underline{X. Xu}, Feasibility analysis of hyperspectral
 remote sensing of aerosols from future geostationary satellites,
 \textit{The 16th Electromagnetic and
 Light Scattering Conference}, College Park, MD, 19-25 March 2017. \\
- 2016 & Chen X., J. Wang, \textbf{X. Xu}, Y. Liu, D. Yang, and Z. Cai, Angular
+ 2016 & Chen X., J. Wang, \underline{X. Xu}, Y. Liu, D. Yang, and Z. Cai, Angular
 dependence and the role of polarization for aerosol microphysical
 properties information content from simulated CAPI/TanSat observation
 over land, A32A-05, \textit{AGU 2016 Fall Meeting}, San Francisco, CA,
 12--16 December 2016. \\
- 2016 & \textbf{Xu X.}, J. Wang, Y. Wang, D. Henze, and L. Zhang, Assessing
+ 2016 & \underline{Xu X.}, J. Wang, Y. Wang, D. Henze, and L. Zhang, Assessing
 Information Content of CLARREO Measurements to Size-Dependent Dust
 Emissions: An OSSE Study, \textit{CLARREO Science Definition Team
 Meeting}, National Institute of Aerospace, Hampton, VA, Nov 29 -- Dec 1,
 2016\\ 
- 2016 & Wang J., \textbf{X. Xu}, D. Henze, and L. Zhang, Assessing Information
+ 2016 & Wang J., \underline{X. Xu}, D. Henze, and L. Zhang, Assessing Information
 Content of CLARREO Measurements to Size-Dependent Dust Emissions: An
 OSSE Study, \textit{CLARREO Science Definition Team Meeting}, Ann Arbor,
 MI, 10--12 May 2016. \\
- 2015 & Wang J., S. Ding, and \textbf{X. Xu}, Polarimetric remote
+ 2015 & Wang J., S. Ding, and \underline{X. Xu}, Polarimetric remote
 sensing in O2 A and B bands: Sensitivity study and information content
 analysis for vertical profile of aerosols, A21L-06, \textit{AGU 2015 Fall
 Meeting}, San Francisco, CA, 14--18 December 2015. \\
- 2015 & Wang J., Y. Yue, \textbf{X. Xu}, Y. Liu, R. Levy, J. J. Szykman,
+ 2015 & Wang J., Y. Yue, \underline{X. Xu}, Y. Liu, R. Levy, J. J. Szykman,
 and R. Holz, Will ensemble approach improve surface PM2.5 estimate from
 space? \textit{MODIS/VIIRS Science Team Meeting}, Silver Spring, MD,
 18--22 May 2015. \\
- 2015 & Wang J., \textbf{X. Xu}, Y. Wang, D. Henze, and L. Zhang, 
+ 2015 & Wang J., \underline{X. Xu}, Y. Wang, D. Henze, and L. Zhang, 
  Dust Emission Optimization with Satellite Remote Sensing: Application
 to CLAEERO, \textit{CLARREO Science Definition Team Meeting}, Lawrence
 Berkeley National Laboratory, CA, 28--30 April 2015. \\
- 2014 & \textbf{Xu X.}, J. Wang, J. Zeng, R. Spurr, X. Liu, O. Dubovik, Z. Li,
+ 2014 & \underline{Xu X.}, J. Wang, J. Zeng, R. Spurr, X. Liu, O. Dubovik, Z. Li,
 L. Li, B. Holben, and M. Mishchenko, An algorithm for retrieving fine
 and coarse aerosol microphysical properties from AERONET-type
 photopolarimetric measurements, A54B-04, \textit{AGU 2014 Fall Meeting}, San
 Francisco, CA, 15--19 December 2014. \\
- 2014 & \textbf{Xu X.}, J. Wang, Y. Wang, and D. Henze, Adjoint Inversion of 
+ 2014 & \underline{Xu X.}, J. Wang, Y. Wang, and D. Henze, Adjoint Inversion of 
 Atmospheric Dust Sources with the MODIS and MISR Observations, 
 \textit{2014 MISR Science Team Meeting}, Pasadena, CA, 11--12 December 2014. \\
- 2014 & Henze D., L. Zhang, L. Zhu, \textbf{X. Xu}, J. Wang, K. Cady-Pereira,
+ 2014 & Henze D., L. Zhang, L. Zhu, \underline{X. Xu}, J. Wang, K. Cady-Pereira,
 M. Shephard, J. Bash, C. Lee, and R. Martin, Keynote: Remote Sensing
 Constraints on Aerosol Sources and Impacts, \textit{Goldschmidt2014}, Sacramento,
 CA, 8--13 June 2014. \\
- 2014 & Wang J., \textbf{X. Xu}, S. Ding, and W. Hou, TEMPO \& GOES-R
+ 2014 & Wang J., \underline{X. Xu}, S. Ding, and W. Hou, TEMPO \& GOES-R
 synergy update and GEO-TASO aerosol retrieval, \textit{The Second TEMPO 
 Science Team Meeting}, National Institute of Aerospace, Hampton, VA, 
 21--22 May 2014  \\
- 2013 & Spurr R., J. Wang, J. Zeng, \textbf{X. Xu}, and M. Mishchenko, Linearized
+ 2013 & Spurr R., J. Wang, J. Zeng, \underline{X. Xu}, and M. Mishchenko, Linearized
 Mie and T-matrix scattering: Application in aerosol retrievals and
 sensitivity studies, \textit{Electromagnetic and Light Scattering - XIV}, Lille,
 France, 17--21 June 2013.\\
- 2013 & \textbf{Xu X.}, J. Wang, D. K. Henze, W. Qu and M. Kopacz, ¿Adjoint
+ 2013 & \underline{Xu X.}, J. Wang, D. K. Henze, W. Qu and M. Kopacz, ¿Adjoint
 Inversion of Aerosol Emissions from Satellite (MODIS) Radiance
 Observation with GEOS-Chem Model, \textit{the 6th International
 GEOS-Chem Meeting}, Cambridge, MA, 6--9 May 2013. \\
- 2012 & \textbf{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
+ 2012 & \underline{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
 Top-Down Inversion of Aerosol Emissions through Adjoint Integration of
 Satellite Radiance and GEOS-Chem Chemical Transport Model, A32B-07, 
 \textit{AGU 2012 Fall Meeting}, San Francisco, CA, 3--7 December 2012. \\
- 2012 & Wang J., \textbf{X. Xu}, and D. K. Henze, Toward the integrated use of
+ 2012 & Wang J., \underline{X. Xu}, and D. K. Henze, Toward the integrated use of
 multi-sensors (MODIS, MISR, and OMI) and inverse modeling (GEOS-Chem
 adjoint) to constrain the aerosol primary and precursor emissions
 (invited), A24C-02, \textit{AGU 2012 Fall Meeting}, San Francisco, CA,
 3--7 December 2012. \\
- 2012 & Henze D. K., B. S. Meland, \textbf{X. Xu}, J. Wang, F. Akhtar, B.
+ 2012 & Henze D. K., B. S. Meland, \underline{X. Xu}, J. Wang, F. Akhtar, B.
 Hemming, R. W. Pinder, and D. Loughlin, Remote sensing
 constraints on aerosol sources, physical properties and direct radiative
 forcing (Invited), A31I-02, \textit{AGU 2012 Fall Meeting}, San
 Francisco, CA, 3--7 December 2012. \\
- 2012 & Liu X., \textbf{X. Xu}, J. Wang, K. Chance, R. Spurr, and Y. Liu, UNL-VRTM:
+ 2012 & Liu X., \underline{X. Xu}, J. Wang, K. Chance, R. Spurr, and Y. Liu, UNL-VRTM:
 A numerical testbed for remote sensing of aerosols and clouds and its
 preliminary application to the TANSAT, \textit{The 1st TANSAT International
 Workshop}, Beijing, China, 15--17 Oct 2012. \\
- 2012 & Meland B., \textbf{X. Xu}, D. K. Henze, and J. Wang, Assessing
+ 2012 & Meland B., \underline{X. Xu}, D. K. Henze, and J. Wang, Assessing
 Top of Atmosphere Polarization Sensitivity to Aerosol Emissions Using
 the GEOS-Chem Chemical Transport Model Adjoint, 6SA.5, \textit{AAAR 2012 Annual
 Conference}, Minneapolis, MN, 8--12 October 2012. \\
- 2012 & Wang J., \textbf{X. Xu}, D. K. Henze, and J. Zeng, Top-Down
+ 2012 & Wang J., \underline{X. Xu}, D. K. Henze, and J. Zeng, Top-Down
 Estimate of Dust Emissions through Integration of MODIS and MISR Aerosol
 Retrievals with the GEOS-Chem Adjoint Model, 6SA.6, \textit{AAAR 2012
 Annual Conference}, Minneapolis, MN, 8--12 October 2012. \\
- 2012 & Meland B. S., D. K. Henze, \textbf{X. Xu}, and J. Wang, Using
+ 2012 & Meland B. S., D. K. Henze, \underline{X. Xu}, and J. Wang, Using
 the GEOS-Chem Adjoint Model to Determine the Sensitivity of Top of
 Atmosphere Polarizations to Aerosol Emissions, \textit{2012 Aerosol and
 Atmospheric Optics Visibility \& Air Pollution Conference}, edited,
 Whitefish, MT, 24--28 September 2012. \\
- 2012 & \textbf{Xu X.}, J. Wang, D. Henze, and W. Qu, Top-down inversion of aerosol
+ 2012 & \underline{Xu X.}, J. Wang, D. Henze, and W. Qu, Top-down inversion of aerosol
 emissions over China from MODIS observed radiance with the adjoint of
 GEOS-Chem chemical transport model, \textit{2012 International Conference on
 Computational Science}, Omaha, NE, 4--6 June 2012. \\
- 2011 & Wang J., J. Zeng, \textbf{X. Xu}, R. Spurr, X. Liu, M.
+ 2011 & Wang J., J. Zeng, \underline{X. Xu}, R. Spurr, X. Liu, M.
 Mishchenko, B. Holben, A. Sinyuk, and Q. Han, 
 AERONET Skylight Retrievals Using Polarimetric
 Measurements: Toward Physically Consistent Validation of APS/RSP Aerosol
 Products, \textit{2011 Glory Science Team Meeting}, NASA GISS, New York,
 NY, 10--12 August 2011.\\
- 2011 & Wang J., \textbf{X. Xu}, J. Zeng, X. Liu, K. Chance, and R. Spurr,
+ 2011 & Wang J., \underline{X. Xu}, J. Zeng, X. Liu, K. Chance, and R. Spurr,
 Sensitivity experiment of aerosol retrievals for GEOS-CAPE, \textit{The GEOS-CAPE
 Workshop}, Boulder, CO, 11--13 May 2011. \\
- 2010 & Wang J., \textbf{X. Xu}, and D. K. Henze, A new framework for the top-down
+ 2010 & Wang J., \underline{X. Xu}, and D. K. Henze, A new framework for the top-down
 estimate of aerosol emission: Integrated analysis with satellite (MODIS)
 reflectance and the adjoint of a chemistry transport model (GEOS-chem)
 (Invited), \textit{AGU 2010 Fall Meeting}, San Francisco, CA, 13--17
@@ -436,100 +508,104 @@ December 2010.\\
 \hrule
 \begin{longtable}{p{0.4in} p{5.8in}}
  \justifying
- 2016 & Qu Z., D. Henze, S. Capps, Y. Wang, \textbf{X. Xu}, J. Wang, and
+ 2017 & Xu X. and J. Wang, Constraints from reflected solar and infrared
+spectral measurements on size-dependent dust emissions: An OSSE using
+FIM-Chem and GEOS-Chem, \textit{The 8th International GEOS-Chem
+Meeting}, Cambridge, MA, 1-4 May 2017. \\
+ 2016 & Qu Z., D. Henze, S. Capps, Y. Wang, \underline{X. Xu}, J. Wang, and
 M. Keller, Decadal-scale joint inversion of NOx and SO2 using a hybrid
 4D-Var \& mass balance approach, A31E-0084, \textit{AGU 2016 Fall
 Meeting}, San Francisco, CA, 12--16 December 2016. \\
- 2016 & Wang Y., J. Wang, \textbf{X. Xu}, and R. Levy, Retrieving
+ 2016 & Wang Y., J. Wang, \underline{X. Xu}, and R. Levy, Retrieving
 Aerosol Optical Depth over Turbid Coastal Water, A41A-0009, \textit{AGU
 2016 Fall Meeting}, San Francisco, CA, 12--16 December 2016. \\
- 2016 & \textbf{Xu X.},  J. Wang, Y. Wang, and Y. Yue, Retrieval of dust
+ 2016 & \underline{Xu X.},  J. Wang, Y. Wang, and Y. Yue, Retrieval of dust
 plume altitude using the DSCOVR/EPIC measurements in the oxygen-A and -B
 bands, A23D-0264, \textit{AGU 2016 Fall Meeting}, San Francisco, CA,
 12--16 December 2016. \\
- 2015 & \textbf{Xu X.},  J. Wang, Y. Wang, D. Henze, and L. Zhang, 
+ 2015 & \underline{Xu X.},  J. Wang, Y. Wang, D. Henze, and L. Zhang, 
  Sensitivity of spectral climate signals to the emissions of atmospheric
 dust, A31B-0028, \textit{AGU 2015 Fall Meeting}, San Francisco, CA,
 14--18 December 2015. \\
- 2015 & Zhu J., X. Xia, J, Wang, H. Chen, J. Zhang, \textbf{X. Xu}, M. Oo, R.
+ 2015 & Zhu J., X. Xia, J, Wang, H. Chen, J. Zhang, \underline{X. Xu}, M. Oo, R.
 Holz, and R. Levy, Evaluation of aerosol optical depth and aerosol
 models from MODIS and VIIRS retrieval algorithms over North China Plain,
 A21C-0132, \textit{AGU 2015 Fall Meeting}, San Francisco, CA, 
 14--18 December 2015. \\
- 2015 & Hou W., J. Wang, \textbf{X. Xu}, J. Leitch, T, Delker, and G. Chen, An
+ 2015 & Hou W., J. Wang, \underline{X. Xu}, J. Leitch, T, Delker, and G. Chen, An
 algorithm for hyperspectral remote sensing of aerosols: theoretical
 framework, information content analysis and application to GEO-TASO,
 A11G-0123, \textit{AGU 2015 Fall Meeting}, San Francisco, CA,
 14--18 December 2015. \\
- 2015 & Wang Y., J. Wang, \textbf{X. Xu}, and D. Henze, Inverse estimation of
+ 2015 & Wang Y., J. Wang, \underline{X. Xu}, and D. Henze, Inverse estimation of
 SO2 emissions over China with local air mass factor applied, A31B-0030, 
 \textit{AGU 2015 Fall Meeting}, San Francisco, CA, 14--18 December 2015.\\
- 2015 & \textbf{Xu X.}, J. Wang, and Y. Wang, Constraint on dust emission 
+ 2015 & \underline{Xu X.}, J. Wang, and Y. Wang, Constraint on dust emission 
 parameterization schemes through GEOS-chem adjoint and satellite data,
 \textit{The 9th NASA AQAST Meeting}, St. Louis, MO, 2--4 June
 2015.\\
- 2015 & \textbf{Xu X.}, J. Wang, and Y. Wang, Constraining dust sources
+ 2015 & \underline{Xu X.}, J. Wang, and Y. Wang, Constraining dust sources
 with the MODIS and MISR observations,
 \textit{The 7th International GEOS-Chem Meeting}, Cambridge, MA, 4--7
 May 2015.\\
- 2015 & Wang, Y., J. Wang, \textbf{X. Xu}, and D. Henze, GEOS-Chem
+ 2015 & Wang, Y., J. Wang, \underline{X. Xu}, and D. Henze, GEOS-Chem
 Adjoint Inversion of \ce{SO2} Emissions with OMI \ce{SO2} Observations over China,
 \textit{The 7th International GEOS-Chem Meeting}, Cambridge, MA, 4--7
 May 2015.\\
- 2014 & Wang, Y., \textbf{X. Xu}, J. Wang, D. Henze, and Y. Yue, 
+ 2014 & Wang, Y., \underline{X. Xu}, J. Wang, D. Henze, and Y. Yue, 
 Observing System Simulation Experiments (OSSE) for Future Geostationary
 Satellite to Constrain Aerosol Emissions through GEOS-Chem Adjoint, 
 A33H-3300, \textit{AGU 2014 Fall Meeting}, San Francisco, CA, 15--19
 December 2014.\\ 
- 2014 & Ding, S., J. Wang, \textbf{X. Xu}, and R. Spurr, 
+ 2014 & Ding, S., J. Wang, \underline{X. Xu}, and R. Spurr, 
 Retrieval of optical depth and vertical distribution of atmospheric
 aerosols from light intensity and polarization in \ce{O2}-A and -B bands,
 A51B-3025, \textit{AGU 2014 Fall Meeting}, San Francisco, CA, 15--19
 December 2014.\\
- 2014 & Han, D., J. Wang, \textbf{X. Xu}, W. Hou, and L. Chen, 
+ 2014 & Han, D., J. Wang, \underline{X. Xu}, W. Hou, and L. Chen, 
 Application of GOSAT TANSO-CAI observations for aerosol optical depth
 retrieval and surface PM2.5 air quality monitoring, A51B-3030,
 \textit{AGU 2014 Fall Meeting}, San Francisco, CA, 15--19
 December 2014.\\
- 2014 & Hou, W., J. Wang, \textbf{X. Xu}, S. Ding, D. Han, J. Leitch, T. Delker,
+ 2014 & Hou, W., J. Wang, \underline{X. Xu}, S. Ding, D. Han, J. Leitch, T. Delker,
 and G. Chen, An algorithm for simultaneous inversion of aerosol
 properties and surface reflectance from airborne GeoTASO hyperspectral
 data, A51B-3034, \textit{AGU 2014 Fall Meeting}, San Francisco, CA, 15--19
 December 2014.\\
- 2014 & \textbf{Xu X.} and J. Wang, Information Content in AERONET
+ 2014 & \underline{Xu X.} and J. Wang, Information Content in AERONET
 Photo-Polarimetric Measurements for Aerosol Microphysical Properties,
 \textit{Goldschmidt2014}, Sacramento, CA, June 8--13, 2014.\\
- 2014 & \textbf{Xu X.}, J. Wang, and D. Henze, First Inversion of Aerosol
+ 2014 & \underline{Xu X.}, J. Wang, and D. Henze, First Inversion of Aerosol
 Emissions from Satellite Radiances, \textit{The Goldschmidt 2014},
 Sacramento, CA, June 8--13, 2014.\\
- 2014 & Wang, Y., \textbf{X. Xu}, J. Wang, and D. Henze, Observing System
+ 2014 & Wang, Y., \underline{X. Xu}, J. Wang, and D. Henze, Observing System
 Simulation Experiments (OSSE) for Future Geostationary Satellite to
 Constrain Aerosol Emissions, \textit{The Goldschmidt 2014},
 Sacramento, CA, June 8--13, 2014. \\
- 2013 & \textbf{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
+ 2013 & \underline{Xu X.}, J. Wang, D. K. Henze, W. Qu, and M. Kopacz,
 Inversion of Aerosol Sources from MODIS Radiances with GEOS-Chem
 Adjoint, and Evaluation with Multi-Sensor Data, 
 \textit{12th AEROCOM Workshop}, Hamburg, Germany, 23--27 September, 2013. \\
- 2013 & \textbf{Xu X.}, J.Wang, J. Zeng, R. Spurr, X. Liu, and B. Holben, Retrieval
+ 2013 & \underline{Xu X.}, J.Wang, J. Zeng, R. Spurr, X. Liu, and B. Holben, Retrieval
 of aerosol microphysical properties from AERONET measurements of
 polarimetric skylight radiance, \textit{Electromagnetic and Light
 Scattering - XIV}, Lille, France, June 17--21, 2013.\\
- 2012 & Zeng, J., J. Wang, Y. Liu, Z. Yang, and \textbf{X. Xu}, Application of
+ 2012 & Zeng, J., J. Wang, Y. Liu, Z. Yang, and \underline{X. Xu}, Application of
 VIIRS data for remote sensing of surface particulate matter in Atlanta
 city, A21C-0071, \textit{AGU 2012 Fall Meeting}, San Francisco, CA, 3--7 
 December 2012. \\
- 2012 & Wang, J., \textbf{X. Xu}, J. Zeng, R. J. Spurr, X. Liu, and K. Chance, 
+ 2012 & Wang, J., \underline{X. Xu}, J. Zeng, R. J. Spurr, X. Liu, and K. Chance, 
 Feasibility study for combined use of GEO-CAPE and GOES-R
 observations to improve retrieval of aerosol properties, A31B-0025,
 \textit{AGU 2012 Fall Meeting}, San Francisco, CA, 3--7 December 2012. \\
- 2011 & \textbf{Xu X.}, J. Wang, et al., Top-down estimate of aerosol emissions
+ 2011 & \underline{Xu X.}, J. Wang, et al., Top-down estimate of aerosol emissions
 over China from MODIS reflectance by using GEOS-Chem adjoint, \textit{The 5th
 International GEOS-Chem Meeting}, Cambridge, MA, 2--5 May 2011.\\
- 2009 & \textbf{Xu X.} and J. Wang, Aerosol optical thickness over the east
+ 2009 & \underline{Xu X.} and J. Wang, Aerosol optical thickness over the east
 Asia: GEOS-chem simulations constrained by MODIS reflectance, \textit{Gordon
 Research Conference (GRC) on Radiation \& Climate}, New London, NH, 6--10
 July 2009. \\
- 2009 & \textbf{Xu X.} and J. Wang, Aerosol optical thickness over the
+ 2009 & \underline{Xu X.} and J. Wang, Aerosol optical thickness over the
 east Asia: GEOS-chem simulations constrained by MODIS reflectance,
 \textit{The 4th International GEOS-Chem Meeting}, Cambridge, MA, 7--10 
 April 2009. \\
@@ -544,19 +620,20 @@ April 2009. \\
 %(\textbf{30 reviews on 26 manuscripts for 15 journals}) \\
 \textit{Aerosol and Air Quality Research}: 2015(2), 2016(1) \\
 \textit{Atmosphere}: 2016(4) \\
-\textit{Atmospheric Chemistry and Physics}: 2016(1) \\
+\textit{Atmospheric Chemistry and Physics}: 2016(1), 2017(1) \\
 \textit{Atmospheric Environment}: 2016(2) \\
 \textit{Frontiers of Earth Science}: 2014(1) \\
+\textit{Geoscientific Model Development}: 2017(1) \\
 \textit{International Journal of Environmental Research and Public
 Health}: 2016(1) \\
 \textit{International Journal of Remote Sensing}: 2014(1) \\
 \textit{Journal of Atmospheric and Solar-Terrestrial Physics}:
 2015(1), 2016(1) \\
-\textit{Journal of Geophysical Research}: 2013(2), 2016(1), 2017(1) \\
+\textit{Journal of Geophysical Research}: 2013(2), 2016(1), 2017(4) \\
 \textit{Journal of Quantitative Spectroscopy and Radiative Transfer}:
 2015(1), 2016(1) \\
-\textit{Remote Sensing}: 2016(1), 2017(3) \\
-\textit{Remote Sensing of Environment}: 2016(5), 2017(1) \\
+\textit{Remote Sensing}: 2016(1), 2017(6) \\
+\textit{Remote Sensing of Environment}: 2016(5), 2017(3) \\
 \textit{Science of the Total Environment}: 2016(2), 2017(1) \\
 \textit{Southeastern Geographer}: 2016(1) \\
 \textit{Theoretical and Applied Climatology}: 2012(1), 2013(1), 2015(1)
