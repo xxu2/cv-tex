@@ -1,5 +1,5 @@
 \documentclass[11.5pt, letterpaper]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
-\usepackage[left=1.0in,top=0.9in,right=1.0in,bottom=0.9in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[left=1.0in,top=1.0in,right=1.0in,bottom=1.0in]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 %\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
 %\geometry{landscape}                		% Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
@@ -28,6 +28,7 @@
 \fancyhead{} % clear all header fields
 \renewcommand{\headrulewidth}{0pt} % no line in header area
 \fancyfoot{} % clear all footer fields
+\renewcommand{\footrulewidth}{0.4pt}
 \fancyfoot[LE,RO]{Page \thepage}     % page number in "outer" position of footer line
 \fancyfoot[RE,LO]{Xiaoguang Xu, Curriculum Vitae} % other info in "inner" position of footer line
 
@@ -60,7 +61,7 @@
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionskip{\smallskip} % The space after the heading section
 
 \begin{document}
 %\maketitle
@@ -68,7 +69,7 @@
 %\subsection{}
 \vspace*{1.5em}
 %\hfil{\MakeUppercase{\bf{\Large{X}\large{iaoguang (}\Large{R}\large{ichard) }\Large{ X}\large{u}}}}\hfil
-\hfil{\bf{\Large{Xiaoguang (Richard) Xu}}}\hfil
+\hfil{\bf{\LARGE{Xiaoguang (Richard) Xu}}}\hfil
 
 \nameskip
 The University of Iowa \hfill  \hfill Phone: (319) 335 $\cdot$ 1400\\
@@ -88,11 +89,11 @@ Iowa City, IA 52242
 %{\bf\large Experience and Qualifications}
 %\sectionlineskip
 %\hrule
-\vskip1em
-{\bf\large Research Interests}
+\vskip1.5em
+{\bf\large RESEARCH INTERESTS}
 \sectionlineskip
-\hrule
-\begin{addmargin}[1.3in]{0cm}
+%\hrule
+\begin{addmargin}[1.35in]{0cm}
 My research areas have focused on retrieval and assimilation of aerosol 
 remote sensing data, with emphasis on the integration of satellite remote
 sensing and numerical chemistry transport model
@@ -107,12 +108,13 @@ satellite sensors (such as MODIS and EPIC) and ground based polarimetric
 (AERONET) remote sensing platforms.
 \end{addmargin}
 
+\vskip0.5em
 \sectionskip
-{\bf\large Education}
-\sectionlineskip
-\hrule
+{\bf\large EDUCATION}
+%\sectionlineskip
+%\hrule
 \renewcommand{\arraystretch}{1.35}  % Add extra space between rows
-\begin{tabular}{p{1.1in} p{5.1in}}
+\begin{longtable}{p{1.1in} p{5.1in}}
 Ph.D. & Earth and Atmospheric Sciences, University of Nebraska-Lincoln,
         August, 2015 \newline
       {\small Dissertation: \textit{Retrieval of the Aerosol
@@ -122,15 +124,15 @@ Ph.D. & Earth and Atmospheric Sciences, University of Nebraska-Lincoln,
 M.S. & Meteorology, Lanzhou University, Lanzhou, China, 2008 \newline
        {\small Thesis: \textit{Study of Predictability of the 
                T63L16 Climate Model}}  \\
-B.S. &  Atmospheric Sciences, Lanzhou University, Lanzhou, China, 2005\\
-\end{tabular}
+B.S. &  Atmospheric Sciences, Lanzhou University, Lanzhou, China, 2005
+\end{longtable}
 
 %% Research Experiences
 \sectionskip
-{\bf\large Professional Experiences}
-\sectionlineskip
-\hrule
-\begin{tabular}{p{1.1in} p{5.1in}}
+{\bf\large PROFESSIONAL EXPERIENCE}
+%\sectionlineskip
+%\hrule
+\begin{longtable}{p{1.1in} p{5.1in}}
  \justifying
 2016.09--Present & Assistant Research Scientist, The University of Iowa
 \\
@@ -143,83 +145,82 @@ Research (NCAR) \\
 2008.08--2015.08 & Graduate Research Assistant, University of
 Nebraska-Lincoln\\
 2006.07--2008.07  & Graduate Researcher, National Climate Center, China
-Meteorological Administration \\
-\end{tabular}
+Meteorological Administration
+\end{longtable}
 
 %%% Teaching Experience
 \sectionskip
-{\bf\large Teaching Experience}
-\sectionlineskip
-\hrule
-\begin{tabular}{p{1.1in} p{5.1in}}
+{\bf\large TEACHING}
+%\hrule
+\begin{longtable}{p{1.1in} p{5.1in}}
  \justifying
-Co-Lecturer & \textit{Satellite Image Processing \& Remote
-Sensing of Atmosphere}, U. Iowa (2017 Spring)\\
-Guest Lecturer & \textit{Advanced Satellite Remote
-Sensing}, U. Nebraska (2012 Fall, 2015 Fall) \\
-Guest Lecturer & \textit{Physical Meteorology}, U. Nebraska (2015 Fall) \\
-Lead & \textit{Inverse Modeling \& Optimization Discussion
-Series}, U. Nebraska (2014 Spring) \\
-Teaching Assistant & \textit{Environment, Energy, and
-Climate}, U. Nebraska (2013 Fall) \\
-Teaching Assistant & \textit{Atmospheric
-Thermodynamics}, U. Nebraska (2012 Spring)\\
-\end{tabular}
+Co-Lecturer & Satellite Image Processing \& Remote
+Sensing of Atmosphere, U. Iowa (2017 Spring)\\
+Guest Lecturer & Advanced Satellite Remote Sensing, 
+U. Nebraska (2012 Fall, 2015 Fall) \\
+Guest Lecturer & Physical Meteorology, U. Nebraska (2015 Fall) \\
+Lead & Inverse Modeling \& Optimization Discussion Series, 
+U. Nebraska (2014 Spring) \\
+Teaching Assistant & Environment, Energy, and Climate, 
+U. Nebraska (2013 Fall) \\
+Teaching Assistant & Atmospheric Thermodynamics, U. Nebraska (2012 Spring)
+\end{longtable}
 
+%%% Awards
 \sectionskip
-{\bf\large Awards}
-\sectionlineskip
-\hrule
-\begin{tabular}{p{1.1in} p{5.1in}}
+{\bf\large AWARDS}
+%\sectionlineskip
+%\hrule
+\begin{longtable}{p{1.1in} p{5.1in}}
  \justifying 
- 2014 & \textbf{Outstanding Graduate Award}, UNL Earth \& Atmospheric Sciences \\
- 2012--2015 & \textbf{NASA Earth and Space Science Fellowship} \\
- 2007 & \textbf{Outstanding Conference Paper}, China Meteorological
+ 2014 & Outstanding Graduate Award, UNL Earth \& Atmospheric Sciences \\
+ 2012--2015 & NASA Earth and Space Science Fellowship \\
+ 2007 & Outstanding Conference Paper, China Meteorological
 Society Annual Meeting \\
- 2004 & \textbf{Outstanding Undergraduate}, Lanzhou University \\
-\end{tabular} 
+ 2004 & Outstanding Undergraduate, Lanzhou University
+\end{longtable} 
 
 %% Research Grants
 \sectionskip
-{\bf\large Research Grants}
-\sectionlineskip
-\hrule
-\begin{tabular}{p{1.1in} p{5.1in}}
+{\bf\large RESEARCH GRANTS}
+%\sectionlineskip
+%\hrule
+\begin{longtable}{p{1.1in} p{5.1in}}
  \justifying
-2018.03--2021.03 & \textbf{Characterization of Global Aerosol Height Using Satellite
-Observations in Oxygen A and B bands} \quad (\$262,992, Pending). \newline
+2018.03--2021.03 & Characterization of Global Aerosol Height Using Satellite
+Observations in Oxygen A and B bands \quad (\$262,992, Pending) \newline
 \hspace{.5cm} -- Sponsor: NASA (NNH17ZDA001N-NIP) \newline
 \hspace{.5cm} -- Role: PI \\
 
-2017.12--2020.11 & \textbf{Constraining Dust Refractive Index and Direct 
-Radiative Forcing Using Paired Sounder/Imager Sensors on Aqua and SNPP} 
-\quad (\$554,836, Pending). \newline
+2017.12--2020.11 & Constraining Dust Refractive Index and Direct 
+Radiative Forcing Using Paired Sounder/Imager Sensors on Aqua and SNPP 
+\quad (\$554,836, Pending) \newline
 \hspace{.5cm} -- Sponsor: NASA (NNH17ZDA001N-TASNPP) \newline
 \hspace{.5cm} -- Role: PI \\
 
-2017.02--2020.02 & \textbf{Multi-phase inversion of aerosol sources using 
-MODIS, MISR, OMI, and AERONET data and the GEOS-Chem adjoint} \quad 
-(\$809,486). \newline
+2017.02--2020.02 & Multi-phase inversion of aerosol sources using 
+MODIS, MISR, OMI, and AERONET data and the GEOS-Chem adjoint \quad 
+(\$809,486) \newline
 \hspace{.5cm} -- Sponsor: NASA (NNH16ZDA001N-ACMAP) \newline
 \hspace{.5cm} -- Role: Co-I (Dr. Daven Henze is the PI) \\
 
-2014.11--2017.10 & \textbf{Sensitivity analysis and recovery of dust emissions from
-spectral climate signals} \quad (\$539,721). \newline
+2014.11--2017.10 & Sensitivity analysis and recovery of dust emissions from
+spectral climate signals \quad (\$539,721) \newline
 \hspace{.5cm} -- Sponsor: NASA (NNH14ZDA001N-ACSCS) \newline
 \hspace{.5cm} -- Role: Co-I (Dr. Jun Wang is the PI) \\
 
-2012.09--2015.08 & \textbf{Constraining Global Sources of Atmospheric Mineral Dust with
-Multi-Sensor Satellite Observations and the GEOS-Chem Adjoint Model}
-\quad (\$90,000).\newline
+2012.09--2015.08 & Constraining Global Sources of Atmospheric Mineral Dust with
+Multi-Sensor Satellite Observations and the GEOS-Chem Adjoint Model
+\quad (\$90,000)\newline
 \hspace{.5cm} -- NASA Earth and Space Science Fellowship (NESSF12)
 \newline
-\hspace{.5cm} -- Role: Awarded Graduate Fellow \\
-\end{tabular}
+\hspace{.5cm} -- Role: Awarded Graduate Fellow
+\end{longtable}
 
 
 %%% Travel Grants
 \sectionskip
-{\bf\large Travel Grants}
+{\bf\large TRAVEL GRANTS}
 \sectionlineskip
 \hrule
 \begin{longtable}{p{1.1in} p{5.1in}}
@@ -236,7 +237,7 @@ MA, 2--5 May 2011. \\
  2009 & The Gordon Research Conference on Radiation \& Climate,
 New London, NH, 6--10 July 2009.\\
  2009 & The 4th International GEOS-Chem Meeting, Cambridge,
-MA, 7--10 April 2009. \\
+MA, 7--10 April 2009.
 \end{longtable}
 \vskip-1em
 
@@ -639,27 +640,27 @@ April 2009. \\
 {\bf\large Reviewing for Journal Articles:}
 %(\textbf{30 reviews on 26 manuscripts for 15 journals}) \\
 \begin{addmargin}[0.3in]{0cm}
-\textit{Aerosol and Air Quality Research}: 2015(2), 2016(1) \\
-\textit{Atmosphere}: 2016(4) \\
-\textit{Atmospheric Chemistry and Physics}: 2016(1), 2017(2) \\
-\textit{Atmospheric Environment}: 2016(2) \\
-\textit{Frontiers of Earth Science}: 2014(1) \\
-\textit{Geoscientific Model Development}: 2017(1) \\
+\textit{Aerosol and Air Quality Research}: \hfill 2015(2), 2016(1) \\
+\textit{Atmosphere}: \hfill 2016(4) \\
+\textit{Atmospheric Chemistry and Physics}: \hfill 2016(1), 2017(2) \\
+\textit{Atmospheric Environment}: \hfill 2016(2) \\
+\textit{Frontiers of Earth Science}: \hfill 2014(1) \\
+\textit{Geoscientific Model Development}: \hfill 2017(1) \\
 \textit{International Journal of Environmental Research and Public
-Health}: 2016(1) \\
-\textit{International Journal of Remote Sensing}: 2014(1) \\
+Health}: \hfill 2016(1) \\
+\textit{International Journal of Remote Sensing}: \hfill 2014(1) \\
 \textit{Journal of Atmospheric and Solar-Terrestrial Physics}:
 2015(1), 2016(1) \\
-\textit{Journal of Geophysical Research}: 2013(2), 2016(1), 2017(4) \\
+\textit{Journal of Geophysical Research}: \hfill 2013(2), 2016(1), 2017(4) \\
 \textit{Journal of Quantitative Spectroscopy and Radiative Transfer}:
-2015(1), 2016(1) \\
-\textit{Remote Sensing}: 2016(1), 2017(6) \\
-\textit{Remote Sensing of Environment}: 2016(5), 2017(3) \\
-\textit{Science of the Total Environment}: 2016(2), 2017(1) \\
-\textit{Southeastern Geographer}: 2016(1) \\
-\textit{Theoretical and Applied Climatology}: 2012(1), 2013(1), 2015(1)
+\hfill 2015(1), 2016(1) \\
+\textit{Remote Sensing}: \hfill 2016(1), 2017(6) \\
+\textit{Remote Sensing of Environment}: \hfill 2016(5), 2017(3) \\
+\textit{Science of the Total Environment}: \hfill 2016(2), 2017(1) \\
+\textit{Southeastern Geographer}: \hfill 2016(1) \\
+\textit{Theoretical and Applied Climatology}: \hfill 2012(1), 2013(1), 2015(1)
 \\
-\textit{Water, Air, \& Soil Pollution}: 2017(1)
+\textit{Water, Air, \& Soil Pollution}: \hfill 2017(1)
 \end{addmargin}
 
 {\bf\large Reviewing for Conference Papers:}
